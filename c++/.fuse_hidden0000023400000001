@@ -1,0 +1,17 @@
+#include <iostream>
+
+class Motor {
+
+	protected:
+		unsigned year;
+
+	public:
+
+		Motor() {
+
+		}
+
+		Motor(unsigned y) {
+			this->setYear(y);
+		}
+}
