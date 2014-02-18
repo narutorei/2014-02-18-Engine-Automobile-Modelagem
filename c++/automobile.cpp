@@ -28,32 +28,33 @@ class Automobile {
 		/**
 		 * Marca do carro
 		 */
-		string brand;
+		std::string brand;
 
 	/**
 	 * Métodos públicos
 	 */
 	public:
 		Automobile() {
-			this->setEngine(&(new Engine()));
+			Engine e();
+			this->setEngine(e);
 			this->setYear(DEFAULT_YEAR);
 			this->setBrand(DEFAULT_BRAND);
 		}
 
-		Automobile(Engine *eng, unsigned y, string brn) {
+		Automobile(Engine *eng, unsigned y, std::string brn) {
 			this->setEngine(eng);
 			this->setYear(y);
 			this->setBrand(brn);
 		}
 
-		void setBrand(string b) {
+		void setBrand(std::string b) {
 			if(strlen(b) < 2)
 				throw 1;
 
 			this->brand = b;
 		}
 
-		string getBrand() {
+		std::string getBrand() {
 
 			return this->brand;
 
@@ -72,7 +73,7 @@ class Automobile {
 
 		}
 
-		void setEngine(Engine *eng) {
+		void setEngine(Engine eng) {
 
 			if(!eng->isValid())
 				throw 2;
@@ -87,4 +88,4 @@ class Automobile {
 
 		}
 
-}
+};
