@@ -4,8 +4,32 @@
 		"selected_items":
 		[
 			[
+				"str",
+				"string"
+			],
+			[
+				"get",
+				"getYear"
+			],
+			[
+				"Autom",
+				"automobile"
+			],
+			[
+				"sert",
+				"setYear"
+			],
+			[
+				"br",
+				"brn"
+			],
+			[
 				"set",
-				"setUpdated"
+				"setBrand"
+			],
+			[
+				"y",
+				"year"
 			],
 			[
 				"ca",
@@ -14,10 +38,6 @@
 			[
 				"program",
 				"programExit"
-			],
-			[
-				"get",
-				"getNumToSearch"
 			],
 			[
 				"tme",
@@ -494,36 +514,16 @@
 			[
 				"app",
 				"APPLICATION_ENV"
-			],
-			[
-				"A",
-				"APPLICATION_ENV"
-			],
-			[
-				"emai",
-				"email_name"
-			],
-			[
-				"preg",
-				"preg_match"
-			],
-			[
-				"loadD",
-				"loadDataByOrgID  (function)"
-			],
-			[
-				"not",
-				"not_valid_rows"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/media/arquivo/Códigos/UEPG/Modelagem de Software/motor_automovel/c++/automovel.cpp",
+			"file": "/media/arquivo/Códigos/UEPG/Modelagem de Software/motor_automovel/c++/automobile.cpp",
 			"settings":
 			{
-				"buffer_size": 185,
+				"buffer_size": 1122,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,15 +531,15 @@
 			"file": "/media/arquivo/Códigos/UEPG/Modelagem de Software/motor_automovel/c++/main.cpp",
 			"settings":
 			{
-				"buffer_size": 310,
+				"buffer_size": 1332,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/media/arquivo/Códigos/UEPG/Modelagem de Software/motor_automovel/c++/motor.cpp",
+			"file": "/media/arquivo/Códigos/UEPG/Modelagem de Software/motor_automovel/c++/engine.cpp",
 			"settings":
 			{
-				"buffer_size": 109,
+				"buffer_size": 1007,
 				"line_ending": "Unix",
 				"name": "#include <iostream>"
 			}
@@ -1139,6 +1139,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"string",
+			"ZERO_UNSIGNED",
+			"Automovel",
+			"motor",
+			"Motor",
+			"ano",
 			"pa1",
 			"1",
 			"*(",
@@ -1260,13 +1266,7 @@
 			"contais",
 			"public function add",
 			"users",
-			"client",
-			"var_dump",
-			"cascade={\"persist\"}",
-			"this->buildUser",
-			"this->buildClient",
-			"setUpUser",
-			"reinald"
+			"client"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1296,19 +1296,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/media/arquivo/Códigos/UEPG/Modelagem de Software/motor_automovel/c++/automovel.cpp",
+					"file": "/media/arquivo/Códigos/UEPG/Modelagem de Software/motor_automovel/c++/automobile.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 185,
+						"buffer_size": 1122,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								59,
-								59
+								555,
+								555
 							]
 						],
 						"settings":
@@ -1432,15 +1432,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 310,
+						"buffer_size": 1332,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								117,
-								117
+								427,
+								427
 							]
 						],
 						"settings":
@@ -1560,19 +1560,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/media/arquivo/Códigos/UEPG/Modelagem de Software/motor_automovel/c++/motor.cpp",
+					"file": "/media/arquivo/Códigos/UEPG/Modelagem de Software/motor_automovel/c++/engine.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 109,
+						"buffer_size": 1007,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								103,
-								103
+								19,
+								19
 							]
 						],
 						"settings":
@@ -1685,7 +1685,7 @@
 							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 102.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -2281,6 +2281,10 @@
 	},
 	"settings":
 	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
 	},
 	"show_minimap": true,
 	"show_open_files": true,
